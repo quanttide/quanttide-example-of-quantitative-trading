@@ -1,3 +1,14 @@
+"""
+交易记录:
+Day 6: 买入 90股 @ 110
+Day 11: 卖出 @ 116
+Day 13: 买入 85股 @ 118
+Day 15: 卖出 @ 125
+
+最终资产: 10625.00元
+总收益率: 6.25%
+"""
+
 import sys
 sys.path.append('..')  # 添加父目录到模块搜索路径，以便导入 strategies 模块
 
@@ -20,14 +31,4 @@ def test_strategy_logic():
     expected_cash = 10625.00
     assert abs(cash - expected_cash) < 0.01, f"最终资产不匹配，预期: {expected_cash}, 实际: {cash}"
 
-"""
-交易记录:
-Day 6: 买入 90股 @ 110
-Day 11: 卖出 @ 116
-Day 13: 买入 85股 @ 118
-Day 15: 卖出 @ 125
-
-最终资产: 10625.00元
-总收益率: 6.25%
-"""
 
